@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<script>
+// start to study how can i set timeout in your function
+
+// and know what happen (put function in call stack)
+// but when we have the setTimeout in our code what happen
+// setTimeout put into browser API and function invoked in put into callback queue
+// when call stack is empt the function putted in callback queue is out and go into call stack and provide the out put
+//remember setTimeout function have two part for function invoked in and the time set that function is delaying
+
+function f1(){
+
+    function name(){
+        console.log("I am Noella and i am here for studying only!");
+    }
+
+setTimeout(name,2000)
+
+
+}
+
+
+function f2(){
+
+f1();
+
+console.log("What your name");
+
+function thanks(){
+   console.log( "Ok thank you noella, you are so amazing");
+}
+
+setTimeout(thanks,4000);
+
+}
+
+function f3(){
+
+f2();
+
+}
+
+// invoking function 
+
+f3();
+
+
+</script>
+
+</body>
+</html>
+
