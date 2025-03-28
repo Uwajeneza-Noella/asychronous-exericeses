@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+async function remember(sec) {
+
+    console.log("Wait wakeup time!")
+    
+if(sec > 2000){
+ 
+    function itTime(){
+
+console.log("John wakeup time");
+
+    }
+
+    setTimeout(itTime,sec);
+
+}else{
+
+console.log("Don't allows to wakeup that time!");
+
+}
+
+
+}
+
+remember(4000);
+
+</script>
+
+</body>
+</html>

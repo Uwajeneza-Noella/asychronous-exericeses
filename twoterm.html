@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+
+async function add(a,b) {
+    
+return a+b;
+
+}
+
+async function mult(num1){
+
+    return num1*2;
+
+}
+
+async function sub(num2){
+
+return num2-10;
+
+}
+
+async function final() {
+    
+let x= await add(5,2);
+console.log(x);
+
+let y = await mult(x);
+console.log(y);
+
+let z = await sub(y);
+console.log(z);
+
+}
+
+final();
+</script>
+
+
+</body>
+</html>

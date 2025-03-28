@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+
+
+//create promise have two function one is resolve second is reject
+//mean resolve is when  promise is completed accessing using (then)
+//mean resolve is when  promise is not completed accessing using (catch)
+//when you accessing this promise using arrow function 
+//for create promise using new keword and asign to variable
+
+
+//create promise
+
+const promise1 = new Promise(function(resolve,reject){
+
+resolve("I am Noella from Rwamagana study in to college");
+
+});
+
+promise1.then(solved=>console.log(solved));
+
+//when promise does not complete
+
+const promise2 = new Promise(function(resolve,reject){
+
+console.log("Am i Noella or not? why have i this face seems like our freind");
+
+});
+
+
+promise2.catch(fail=>console.log(fail));
+
+
+//we are going to use promise in function and proding delay in our function at same time
+//when you have setTimeout and promise at the same time first the setTimeout go in broswer API and 
+//promise go in job queue
+
+</script>
+
+
+</body>
+</html>

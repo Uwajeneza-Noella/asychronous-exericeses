@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous exercises</title>
+</head>
+<body>
+    
+    <script>
+
+// function asyncOperation() {
+
+//     console.log("Hy Noella this is your final result");
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       let success = false;  // Simulate success/failure
+//       if (success) {
+//         resolve("Operation finished successfully");
+//       } else {
+//         reject("Operation failed");
+//       }
+//     }, 2000); // Simulate async delay
+//   });
+// }
+
+// asyncOperation()
+//   .then(result => {
+//     console.log(result); // "Operation finished successfully"
+//   })
+//   .catch(error => {
+//     console.log(error); // "Operation failed"
+//   });
+
+// function noella(){
+
+//     console.log("Start to do every thing");
+//  return new Promise(function(resolve,reject){
+
+
+// function fabiola(){
+//     const choose = true;
+// if(choose){
+
+//     resolve(" I thing is working propely");
+
+// }else{
+
+//     reject("I thing is not working propely");
+
+// }
+// }
+// setTimeout(fabiola,2000);
+// });
+
+// console.log("Yes am i ready hearig you");
+
+// }
+
+// noella()
+// .then(nono=>console.log(nono))
+// .catch(fafa=>console.log(fafa));
+
+
+// let promise1 = Promise.reject(3);
+// let promise2 = new Promise((resolve, reject) => setTimeout(function c(){
+//     reject('error:hello world')
+// },3000));
+// let promise3 = Promise.resolve(100);
+
+// let promise4 = new Promise(function(resolve,reject){
+
+// resolve("Hy fabiola are you ok?");
+
+// });
+
+//promise4.then(soso=>console.log(soso));
+
+// Promise.allSettled([promise1, promise2, promise3,promise4])
+//   .then((values) => {
+//     console.log(values);  // [3, "foo", 42]
+//   }) ;
+ 
+  //promise.all: return when all promise is resolve
+  //promise.race: iyo iyambere yabaye reject ihita ihagarara
+  // //promise.any: take first promise to be resolved
+  // //promise.allsettled:
+
+
+  //Async and Await
+
+//   async function f1(num1){
+//     return
+//   }
+
+
+// async function trust1(){
+
+//      const promise1 = new Promise(function(resolve,reject){
+//         reject('error:My first output')
+//      });
+
+//      const promise2 = new Promise(function(resolve,reject){
+//         resolve('My second output')
+//      });
+
+//      const promise3 = new Promise(function(resolve,reject){
+//         resolve('My third output')
+//      });
+
+//      const promise4 = new Promise(function(resolve,reject){
+//         resolve('My fouth output')
+//      });
+
+
+// Promise.any([promise1,promise2,promise3,promise4])
+// .then(aline=>console.log(aline));
+
+// }
+
+// trust1();
+
+
+//convert name to capital and make reverse using callback function
+
+// function changeName(fname,lname,callback){
+
+// return callback(fname,lname);
+
+// }
+
+//  const convert = (fname,lname)=>{
+
+// let first = fname.toUpperCase();
+// console.log(first);
+// let last = lname.split('').reverse().join('');
+// console.log(last);
+//  }
+
+// changeName('noella','uwajeneza',convert);
+
+// create function for count from 1 to 5 with 5delay 
+
+// function counting(callback){
+//     let count=1;
+//     for (let a = 1; a <=5; a++) {
+//         setTimeout(()=>{
+//             count++;
+//             console.log(a);
+//         },a*1000);
+             
+//     }}
+// let b =(number) => console.log(number);
+// counting(b);
+
+
+
+//make calculator with callback make add two number
+
+// function calculator(num1,num2,callback){
+
+//   return callback(num1,num2,);
+
+// }
+
+// const sumNum = (num1,num2)=>{
+
+// let final = num1+num2;
+// console.log(`The sum of two numbers are: ${final}`);
+
+// }
+
+// calculator(2,5,sumNum);
+
+
+// filter array using callback
+// function testSet(array,callback){
+// callback(array);
+
+// for(let num of array){
+
+// if(num %2 ==0){
+
+
+//  console.log(`This number ${num} is Even`);
+
+// }else{
+
+//     console.log(`This number ${num} is Odd`);
+
+// }
+// }
+
+// }
+
+// testSet([1,2,5,6,8,9,4,12,17,15,14],didi=>{
+
+//     console.log(didi);
+
+// });
+
+
+async function numInterval(callback){
+
+let mama= await fetch("");
+
+let data = await mama.json();
+
+console.log(data);
+
+
+}
+
+
+numInterval();
+    </script>
+
+</body>
+</html>
